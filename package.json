@@ -1,0 +1,24 @@
+{
+  "name": "verifyemail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "zip -r ver.zip ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruberjl/verifyEmail.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gruberjl/verifyEmail/issues"
+  },
+  "homepage": "https://github.com/gruberjl/verifyEmail#readme",
+  "dependencies": {
+    "email-existence": "^0.1.5"
+  }
+}
