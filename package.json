@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "zip": "zip -r ver.zip ./"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/gruberjl/verifyEmail#readme",
   "dependencies": {
     "email-existence": "^0.1.5"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
   }
 }

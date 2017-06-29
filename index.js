@@ -1,4 +1,5 @@
-const emailExistence = require('email-existence')
+const {isEmail} = require('./lib/tasks.js')
+const timeout = 5000
 
 exports.handler = (event, context, callback) => {
     const emailAddress = event.emailAddresses[0]
