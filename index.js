@@ -8,3 +8,22 @@ exports.handler = (event, context, callback) => {
         callback(null, res);
     });
 };
+
+const request = require('request-promise');
+request({
+    method: 'GET',
+    uri: 'https://n9l9x7onql.execute-api.us-east-2.amazonaws.com/prod/verifyEmail', //`https://verifyEmail.gitbit.org/prod/verifyEmail`,
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: {
+      "mx": "gitbit-org.mail.protection.outlook.com",
+      "email": "john.gruber@gitbit.org"
+    },
+    json: true
+}).then((response) => {
+  console.log(response)
+}, (err) => {
+  console.log('err')
+  console.log(err)
+})
