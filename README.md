@@ -9,6 +9,7 @@ The server will follow the following process:
 * Determine if one email or many.
 * If one email address:
     * wrap in an array and pretend it's many.
+* verify you have at least 1 item in the array.
 * Validate each string is an email address
 * split the domain from each email address
 * sort the array by domain names
