@@ -1,6 +1,3 @@
-const {isEmail} = require('./lib/tasks.js')
-const timeout = 5000
+const {run} = require('./lib/workflow.js')
 
-const handler = () => {
-  
-}
+module.exports.run = run
